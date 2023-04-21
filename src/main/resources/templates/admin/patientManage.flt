@@ -47,6 +47,7 @@
                     <th>主治医生</th>
                     <th>是否出院</th>
                     <th>家庭住址</th>
+                    <th>联系电话</th>
                     <th>操作&nbsp;&nbsp;&nbsp;&nbsp;
                         <button class="layui-btn" onclick="showAdd('/admin/patientAdd')"><i class="layui-icon">&#xe608;</i> 添加</button>
                     </th>
@@ -71,6 +72,7 @@
                                 <#if p.isout==2>已出院</#if>
                             </td>
                             <td>${p.address}</td>
+                            <td>11122223333</td>
                             <td>
                                 <button class="layui-btn" onclick="edit('/admin/patient/',${p.id})"><i class="layui-icon">&#xe642;</i></button>
                                 <button class="layui-btn" onclick="del('/admin/patient/',${p.id})"><i class="layui-icon">&#xe640;</i></button>

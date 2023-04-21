@@ -42,6 +42,9 @@
                     <col width="200">
                     <col width="200">
                     <col width="200">
+                    <col width="200">
+                    <col width="200">
+                    <col width="200">
                     <col>
                 </colgroup>
                 <thead>
@@ -51,6 +54,9 @@
                     <th>药品类型</th>
                     <th>单价（盒/元）</th>
                     <th>数量</th>
+                    <th>出厂厂家</th>
+                    <th>药品摆放处</th>
+                    <th>保质期</th>
                     <th>操作&nbsp;&nbsp;&nbsp;&nbsp;
                         <button class="layui-btn" onclick="showAdd('/admin/drugAdd')"><i class="layui-icon">&#xe608;</i> 添加</button>
                     </th>
@@ -72,6 +78,9 @@
                             </td>
                             <td>${d.price}</td>
                             <td>${d.number}</td>
+                            <td>哈药六厂</td>
+                            <td>A区1层</td>
+                            <td>2023/3/21</td>
                             <td>
                                 <button class="layui-btn" onclick="edit('/admin/drug/',${d.id})"><i class="layui-icon">&#xe642;</i></button>
                                 <button class="layui-btn" onclick="del('/admin/drug/',${d.id})"><i class="layui-icon">&#xe640;</i></button>

@@ -11,7 +11,7 @@
     <#include "../menu.flt"/>
     <div class="layui-body">
         <!-- 内容主体区域 -->
-        <div style="padding: 15px;">
+        <div style="padding: 5px;">
             <h5>医生管理</h5>
             <form action="/admin/doctorManage" method="get">
             <table>
@@ -34,6 +34,8 @@
                     <col width="200">
                     <col width="200">
                     <col width="200">
+                    <col width="200">
+                    <col width="200">
                     <col>
                 </colgroup>
                 <thead>
@@ -45,6 +47,8 @@
                     <th>证件号</th>
                     <th>所属部门</th>
                     <th>家庭住址</th>
+                    <th>职位</th>
+                    <th>电话号</th>
                     <th>操作&nbsp;&nbsp;&nbsp;&nbsp;
                         <button class="layui-btn" onclick="showAdd('/admin/doctorAdd')"><i class="layui-icon">&#xe608;</i> 添加</button>
                     </th>
@@ -64,6 +68,8 @@
                             <td>${d.certId}</td>
                             <td>${d.department}</td>
                             <td>${d.address}</td>
+                            <td>主任</td>
+                            <td>11122223333</td>
                             <td>
                                 <button class="layui-btn" onclick="edit('/admin/doctor/',${d.id})"><i class="layui-icon">&#xe642;</i></button>
                                 <button class="layui-btn" onclick="del('/admin/doctor/',${d.id})"><i class="layui-icon">&#xe640;</i></button>
