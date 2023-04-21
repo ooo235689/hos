@@ -59,7 +59,8 @@
                  </#if>
                 </tbody>
             </table>
-            <#--<div id="test1"></div>-->
+            <div id="page-warp" align="center">
+            </div>
         </div>
     </div>
     <#include "../foot.flt"/>
@@ -81,6 +82,16 @@
             ,limit:5
         });
     });
+    layui.use('laypage', function(){
+                  var laypage = layui.laypage;
+
+                  //执行一个laypage实例
+                  laypage.render({
+                    elem: 'page-warp' //注意，这里的 test 是上面的 ID，不用加 # 号
+                    ,count: 100 //数据总数，从服务端得到
+                    ,limit: 10 //默认显示10条
+                  });
+                });
 </script>
 </body>
 </html>

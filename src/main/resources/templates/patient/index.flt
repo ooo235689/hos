@@ -28,6 +28,7 @@
         #demo li.active img { transform: translate(0px); }
         #demo li:nth-of-type(1) { transform-origin: bottom left; }
         #demo li:nth-of-type(5) { transform-origin: bottom right; }
+        #fonty {font-siz:60px;; }
     </style>
     <script type="text/javascript">
         $(document).ready(function(e){
@@ -45,7 +46,7 @@
 <div class="layui-layout layui-layout-admin">
     <#include "../menu.flt"/>
     <div class="layui-body">
-    <h3>欢迎进入医疗管理系统</h3>
+    <span id="fonty">欢迎进入医疗管理系统</span>
     <br><br>
     <ul id="demo">
         <li class="active">

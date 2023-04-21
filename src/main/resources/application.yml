@@ -1,14 +1,14 @@
 logging:
   config: classpath:config/logback.xml
-
+##自行修改配置文件
 server:
-  port: 8081
+  port: 8080
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/hospital?useSSL=false
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: root
+    password: ooo235689
     type: com.alibaba.druid.pool.DruidDataSource
   freemarker:
     cache: false
